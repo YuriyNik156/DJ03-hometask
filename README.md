@@ -1,2 +1,2 @@
-# DJ03-hometask
-DJ03-hometask
+# DJ02
+DJ02-lesson

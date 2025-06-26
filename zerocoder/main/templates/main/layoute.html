@@ -15,9 +15,11 @@
 
 <body>
     <aside>
-        <img src="{% static 'main/image/Django_logo.png' %}" alt="Django_logo.png" width="150">
-        <span>Django</span>
+        <img src="{% static 'main/image/Zerocoder.jpg' %}" alt="Логотип Зерокодер" width="150">
+        <span>ZeroDjango</span>
         <ul>
+            <li><a href="{% url 'home' %}">Главная</a></li>
+            <li><a href="{% url 'page2' %}">Второстепенная</a></li>
             <li><a href="{% url 'news_home' %}">Новостная страница</a></li>
         </ul>
     </aside>
