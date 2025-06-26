@@ -1,5 +1,5 @@
-from generalnews.shortcuts import render
-from generalnews.http import HttpResponse
+from django.shortcuts import render
+from django.http import HttpResponse
 
 def index(request):
     data = {
