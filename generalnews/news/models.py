@@ -1,4 +1,4 @@
-from django.db import models
+from generalnews.db import models
 
 class News_post(models.Model):
     title = models.CharField('Название новости', max_length=50)
