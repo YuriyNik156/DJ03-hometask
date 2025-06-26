@@ -1,19 +1,19 @@
-{% extends 'news/layoute.html' %}
+{% extends 'news/layout.html' %}
 
 {% block title %}
-    <title>Это новостная страница</title>
+<title>Новости</title>
 {% endblock %}
 
 {% block content %}
-<h1>Это новостная страница</h1>
-
+<h1>Новости</h1>
 {% for new in news %}
-<div>
-    <h3>{{ new.title }}</h3>
-    <p>{{ new.short_description }}</p>
-    <p>{{ text }}</p>
-    <p>{{ pub_date }}</p>
-</div>
+    <div class="news-block">
+        <h2>{{ new.title }}</h2>
+        <p><strong>Автор:</strong> {{ new.author }}</p>
+        <p><strong>Опубликовано:</strong> {{ new.pub_date }}</p>
+        <p><strong>Кратко:</strong> {{ new.short_description }}</p>
+        <p><strong>Текст:</strong> {{ new.text }}</p>
+        <hr>
+    </div>
 {% endfor %}
-
 {% endblock %}
